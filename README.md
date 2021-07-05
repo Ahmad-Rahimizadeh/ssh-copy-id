@@ -17,5 +17,9 @@ after that you should create two files. create loke below:
 ```
 ```
   chmod +x ssh-copy-id.sh
-  ssh-copy-id.sh /path-to-your-hosts-file /path-to-your-password-file
+  ./ssh-copy-id.sh <user you want to copy ssh id for> </path-to-your-hosts-file> </path-to-your-password-file>
+```  
+for example:
+```
+  ./ssh-copy-id root /root/hosts /root/password.txt
 ```  
