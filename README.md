@@ -21,5 +21,5 @@ after that you should create two files. create loke below:
 ```  
 for example:
 ```
-  ./ssh-copy-id root /root/hosts /root/password.txt
+  ./ssh-copy-id.sh root /root/hosts /root/password.txt
 ```  
