@@ -15,7 +15,7 @@ if [ ! -f $HOST_FILE ]; then
 fi
 
 for IP in `cat $HOST_FILE`; do
-        sshpass -f $PASSWORD_FILE ssh-copy-id $USER_NAME@$IP 2>$ERROR_FILE
+        sshpass -f $PASSWORD_FILE ssh-copy-id -o "StrictHostKeyChecking no" $USER_NAME@$IP 2>$ERROR_FILE
         RESULT=$?
         if [ $RESULT -eq 0 ]; then
                 echo ""
